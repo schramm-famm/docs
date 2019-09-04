@@ -1,2 +1,1 @@
-# docs
-Project documentation
+# SYSC 4907 Project Documentation
