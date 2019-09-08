@@ -35,3 +35,4 @@ in it
 * Input images and animated gifs
 * Highlight excerpt and get history of it
   * Which user typed what
+* Search through conversations and users
