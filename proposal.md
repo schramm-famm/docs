@@ -1,11 +1,26 @@
 # Real-Time Collaboration Messaging Application
 **Students**
-
-Thao-Tran Le-Phuong 100997443, Honor Lopes 101008909, Riley MacKinnon 100996542, Igor (Mary) Veselinovic 101011081
+* Thao-Tran Le-Phuong 100997443
+* Honor Lopes 101008909
+* Riley MacKinnon 100996542
+* Igor Veselinovic 101011081
 
 **Supervisor**
 
 Cheryl Schramm
+
+### Table of Contents
+* [Objectives](#objectives)
+* [Background](#background)
+* [Tasks](#tasks)
+* [Methods](#methods)
+* [Timetable](#timetable)
+* [Facilities](#facilities)
+* [Degree Relevance](#degree-relevance)
+	* [Thao-Tran Le-Phuong](#thao-tran-le-phuong)
+	* [Honor Lopes](#honor-lopes)
+	* [Riley MacKinnon](#riley-mackinnon)
+	* [Igor Veselinovic](#igor-veselinovic)
 
 ## Objectives
 The objective of this project is to develop a messaging platform that is formatted as a blank document that allows for 
@@ -16,7 +31,7 @@ Real-time collaboration has been implemented as a feature in word processing sof
 Pages. These applications provide a more professional and formal environment for document writing. Our project aims to provide
 a similar environment geared towards social interaction.
 
-## MVP (Minimum Viable Product) Requirements
+## Tasks
 * The application shall require users to have accounts.
   * Email, Display Name, Password
   * Multi-Factor Authentication
@@ -36,3 +51,19 @@ in it
 * Highlight excerpt and get history of it
   * Which user typed what
 * Search through conversations and users
+
+## Methods
+
+## Timetable
+
+## Facilities
+
+## Degree Relevance
+
+### Thao-Tran Le-Phuong
+
+### Honor Lopes
+
+### Riley MacKinnon
+
+### Igor Veselinovic
