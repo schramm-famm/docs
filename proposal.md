@@ -59,9 +59,9 @@ engineering, so we will need a workflow that is flexible enough to accomodate fo
 in design. The Agile methodology would allow us to quickly write code, test it, and have it running
 in our "production" environment. In addition to our weekly meetings with our supervisor, we will
 have team meetings once a week to update each other on individual progress and share any
-discoveries. Also, we will experiment with pair programming, where two programmers write code
-together at one computer, as a potential technique for working collaboratively. When not working
-together in person, we will communicate over Slack.
+discoveries. Also, we will consider pair programming, where two programmers write code together at
+one computer, as a potential technique for working collaboratively. When not working together in
+person, we will communicate over Slack.
 
 We plan to use an online Kanban board on GitHub to help organize our Agile workflow. The board will
 be a space for us to put tasks and organize them into columns according to each task's progress.
@@ -71,10 +71,11 @@ our project organized.
 
 Once code for a feature or bug fix is written by one team member (or two in the case of pair
 programming), it will need to go through code review by at least one other team member. Testing will
-be an important step for validating new changes to any code base we have. Continuous
+also be an important step for validating new changes to any code base we have. Continuous
 Integration/Continuous Deployment (CI/CD) pipelines will help in automating this process. Before any
-pull request can get merged to our master branch in Git, a pipeline must be run that will run a
-suite of tests to validate that there are no breaking changes.
+pull request can get merged to our master branch in Git, it must be approved by at least one
+reviewer and a pipeline must be run that will run a suite of tests to validate that there are no
+breaking changes.
 
 Since we are developing a complex software system, we will need to research technologies for each
 component of the system. We need a scalable platform to run the server-side code, so cloud vendors
