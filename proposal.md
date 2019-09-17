@@ -47,8 +47,9 @@ The base functionality of a conversation should mimic a real-time collaboration
 word processor. Any changes being made to the conversation will be reflected in
 real-time to all other users participating in the conversation. Text, images,
 and gifs will be accepted as valid conversation inputs. The application will
-support text formatting. Conversation content can also be locked by users so
-that a specific group of content cannot be modified.
+support text styling options, such as bold, italics, underlines, etc. Conversation
+content can also be locked by users so that a specific group of content cannot
+be modified.
 
 In addition to the word processing capabilities, there will be features to
 supplement the messaging platform.  Users will be notified immediately when
