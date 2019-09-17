@@ -17,19 +17,25 @@ Cheryl Schramm
 * [Timetable](#timetable)
 * [Facilities](#facilities)
 * [Degree Relevance](#degree-relevance)
-	* [Thao-Tran Le-Phuong](#thao-tran-le -phuong)
+	* [Thao-Tran Le-Phuong](#thao-tran-le-phuong)
 	* [Honor Lopes](#honor-lopes)
 	* [Riley MacKinnon](#riley-mackinnon)
 	* [Igor Veselinovic](#igor-veselinovic)
 
 ## Objectives
 The objective of this project is to develop a messaging platform that is formatted as a blank document that allows for 
-real-time collaboration between users. The platform will display conversations in a document format where users will be able to add or delete anything that they, or others, have said. The platform will also have a 'mini-map' to display where other users' cursors are in the conversation.
+real-time collaboration between users. We aim to build upon current implementations of real-time collaboration and extend 
+those implementations to provide additional features.
 
 ## Background
 Real-time collaboration has been implemented as a feature in word processing software, such as Microsoft Word, Google Docs, and 
 Pages. These applications provide a more professional and formal environment for document writing. Our project aims to provide
-a similar environment geared towards social interaction. The mini-map feature is currently implemented in VS Code as a way to show the user which part of the document they are currently viewing. Our goal is to implement this feature to show where the other users are in the conversation as well as the user's relative position in the conversation. Current messaging applications follow a more rigid messaging format. Messages in a conversation are often presented in cronological order and are uneditable. Our application will strive to break from these conventions to provide a fully editable conversation where the user can type where ever they so choose.
+a similar environment geared towards social interaction. The mini-map feature is currently implemented in VS Code as a way to
+show the user which part of the document they are currently viewing. Our goal is to implement this feature to show where the
+other users are in the conversation as well as the user's relative position in the conversation. Current messaging 
+applications follow a more rigid messaging format. Messages in a conversation are often presented in chronological order and 
+are uneditable. Our application will strive to break from these conventions to provide a fully editable conversation where the
+user can type wherever they choose.
 
 ## Tasks
 * The application shall require users to have accounts.
