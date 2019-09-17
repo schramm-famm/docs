@@ -38,25 +38,31 @@ are uneditable. Our application will strive to break from these conventions to p
 user can type wherever they choose.
 
 ## Tasks
-* The application shall require users to have accounts.
-  * Email, Display Name, Password
-  * Multi-Factor Authentication
-  * Google/Facebook authentication
-* The application shall allow user input to be displayed to other authorized users in real-time.
-* Users have "conversations" with each other where the conversation is updated in real-time with other's input
-* Notifications will be when a user is typing/has typed within the conversation
-* When a user re-enters a conversation, they'll be shown the changes made to the conversation since the last time they were 
-there
-* A mini-map can be displayed in the corner of the screen that shows an overview of the conversation and where other users are 
-in it 
-* Lock content
-  * Essentially pinning an excerpt so that it can't be edited
-  * Possibly lock position and content
-* Formatting will be stored as XML
-* Input images and animated gifs
-* Highlight excerpt and get history of it
-  * Which user typed what
-* Search through conversations and users
+This messaging application will allow users to create accounts to communicate
+with each other. The accounts can be created using an email account or with
+Google or Facebook authentication. When signed in, users can view and modify their
+"conversations" with other users.
+
+The base functionality of a conversation should mimic a real-time collaboration
+word processor. Any changes being made to the conversation will be reflected in
+real-time to all other users participating in the conversation. Text, images,
+and gifs will be accepted as valid conversation inputs. The application will
+support text formatting. Conversation content can also be locked by users so
+that a specific group of content cannot be modified.
+
+In addition to the word processing capabilities, there will be features to
+supplement the messaging platform.  Users will be notified immediately when
+other users modify a conversation in the same vein as text message
+notifications. Upon re-entering a conversation, the user will be presented with
+the changes made since the last time they were active. Users can manually view
+the history of any excerpt to determine which user contributed each change to
+the excerpt. An overview of the conversation that displays the positions of
+other active users in the conversation will be placed in the corner of every
+conversation.
+
+Search functionality will also be provided in the application. Users will be
+able to search through conversations for specific keywords and filter certain
+parameters.
 
 ## Methods
 We will research and use many different software development methodologies, tools, and technologies
