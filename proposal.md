@@ -99,6 +99,7 @@ application, including React, Angular, and Vue. WebAssembly is another front-end
 are interested in incorporating into our web application.
 
 ## Timetable
+![timetable](./timetable.png)
 
 ## Facilities
 We will be running server-side code on a cloud hosting service. Hosts such as Amazon Web Services 
