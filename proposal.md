@@ -101,18 +101,48 @@ are interested in incorporating into our web application.
 ## Timetable
 
 ## Facilities
-We will be running server-side code on a cloud hosting service. Hosts such as Amazon Web Services offer free trials for the first year, which would cover the length of this project. If these services are unavailable for free, we would expect our hosting costs to be less than $100.
+We will be running server-side code on a cloud hosting service. Hosts such as Amazon Web Services 
+offer free trials for the first year, which would cover the length of this project. If these services 
+are unavailable for free, we would expect our hosting costs to be less than $100.
 
-This project would benefit from having a workplace available for us to work in. It would help to have an on-campus space to develop in.
+This project would benefit from having a workplace available for us to work in. It would help to have 
+an on-campus space to develop in.
 
 ## Degree Relevance
 
 ### Thao-Tran Le-Phuong
+This project is an application of many topics learned and developed in the Computer Systems Engineering 
+degree. This project will involve the entire software development process, including requirements, 
+planning, development, testing, verification, and maintenance. This degree requires multiple programming 
+courses to be taken and the knowledge learned in these courses will be applied when implementing this
+software. This project is real-time and responds to unpredictable inputs from multiple users as discussed
+in courses taken. This project will involve the use of cloud hosting and processing services, which is a
+current industry topic.
 
 ### Honor Lopes
-This project is an application of many topics learned and developed in the Computer Systems Engineering degree. This project will involve the entire software development process including, requirements, planning, development, testing, verification, and maintenance. This degree requires multiple programming courses to be taken and the knowledge learned in these courses will be applied when implementing this software. This project is real-time and responds to unpredictable inputs from multiple users as discussed in courses taken. This project will involve the use of cloud hosting and processing services, which is a current industry topic.
+This project is an application of many topics learned and developed in the Computer Systems Engineering 
+degree. This project will involve the entire software development process, including requirements, 
+planning, development, testing, verification, and maintenance. This degree requires multiple programming 
+courses to be taken and the knowledge learned in these courses will be applied when implementing this
+software. This project is real-time and responds to unpredictable inputs from multiple users as discussed
+in courses taken. This project will involve the use of cloud hosting and processing services, which is a
+current industry topic.
 
 ### Riley MacKinnon
-This project is an application of many topics learned and developed in the Computer Systems Engineering degree. This project will involve the entire software development process including, requirements, planning, development, testing, verification, and maintenance. This degree requires multiple programming courses to be taken and the knowledge learned in these courses will be applied when implementing this software. This project is real-time and responds to unpredictable inputs from multiple users as discussed in courses taken. This project will involve the use of cloud hosting and processing services, which is a current industry topic. The database for this software will be written in SQL with the design and methods learned from database management courses.
+This project is an application of many topics learned and developed in the Computer Systems Engineering 
+degree. This project will involve the entire software development process, including requirements, 
+planning, development, testing, verification, and maintenance. This degree requires multiple programming
+courses to be taken and the knowledge learned in these courses will be applied when implementing this
+software. This project is real-time and responds to unpredictable inputs from multiple users as discussed
+in courses taken. This project will involve the use of cloud hosting and processing services, which is a
+current industry topic. The database for this software will be written in SQL with the design and methods
+learned from database management courses.
 
 ### Igor Veselinovic
+This project is an application of many topics learned and developed in the Computer Systems Engineering 
+degree. This project will involve the entire software development process, including requirements, 
+planning, development, testing, verification, and maintenance. This degree requires multiple programming 
+courses to be taken and the knowledge learned in these courses will be applied when implementing this
+software. This project is real-time and responds to unpredictable inputs from multiple users as discussed
+in courses taken. This project will involve the use of cloud hosting and processing services, which is a
+current industry topic.
