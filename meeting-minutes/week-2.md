@@ -1,4 +1,4 @@
-Week 2 Minutes
+# Week 2 Minutes
 
 Progress update: proposal is completed.
 
