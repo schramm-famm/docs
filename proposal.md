@@ -23,15 +23,16 @@ Cheryl Schramm
 	* [Igor Veselinovic](#igor-veselinovic)
 
 ## Objectives
-The objective of this project is to develop a messaging platform that is formatted as a blank document that allows for 
+The objective of this project is to develop a messaging platform where conversations start out as as a blank document that
+allows for 
 real-time collaboration between users. We aim to build upon current implementations of real-time collaboration and extend 
 those implementations to provide additional features.
 
 ## Background
 Real-time collaboration has been implemented as a feature in word processing software, such as Microsoft Word, Google Docs, and 
 Pages. These applications provide a more professional and formal environment for document writing. Our project aims to provide
-a similar environment geared towards social interaction. The mini-map feature is currently implemented in VS Code as a way to
-show the user which part of the document they are currently viewing. Our goal is to implement this feature to show where the
+a similar environment geared towards social interaction. VS Code currently implements an overview of the opened document to
+show the user which part of the document they are currently viewing. This feature is called a 'mini-map'. Our goal is to implement this feature to show where the
 other users are in the conversation as well as the user's relative position in the conversation. Current messaging 
 applications follow a more rigid messaging format. Messages in a conversation are often presented in chronological order and 
 are uneditable. Our application will strive to break from these conventions to provide a fully editable conversation where the
@@ -41,7 +42,7 @@ user can type wherever they choose.
 This messaging application will allow users to create accounts to communicate
 with each other. The accounts can be created using an email account or with
 Google or Facebook authentication. When signed in, users can view and modify their
-"conversations" with other users.
+conversations with other users.
 
 The base functionality of a conversation should mimic a real-time collaboration
 word processor. Any changes being made to the conversation will be reflected in
@@ -130,7 +131,7 @@ in courses taken. This project will involve the use of cloud hosting and process
 current industry topic.
 
 ### Riley MacKinnon
-This project is an application of many topics learned and developed in the Computer Systems Engineering 
+This project is an application of many topics learned and developed in the Software Engineering 
 degree. This project will involve the entire software development process, including requirements, 
 planning, development, testing, verification, and maintenance. This degree requires multiple programming
 courses to be taken and the knowledge learned in these courses will be applied when implementing this
