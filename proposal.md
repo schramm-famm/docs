@@ -89,7 +89,8 @@ also be an important step for validating new changes to any code base we have. C
 Integration/Continuous Deployment (CI/CD) pipelines will help in automating this process. Before any
 pull request can get merged to our master branch in Git, it must be approved by at least one
 reviewer and a pipeline must be run that will run a suite of tests to validate that there are no
-breaking changes.
+breaking changes. _Our use cases for testing will be directly based off of our requirements so that
+if our tests are passing, we know we have adhereded to our requirements._
 
 Since we are developing a complex software system, we will need to research technologies for each
 component of the system. We need a scalable platform to run the server-side code, so cloud vendors
