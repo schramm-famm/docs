@@ -23,7 +23,7 @@ Cheryl Schramm
 	* [Igor Veselinovic](#igor-veselinovic)
 
 ## Objectives
-The objective of this project is to develop a messaging platform where conversations start out as as a blank document that
+The objective of this project is to develop a messaging platform where conversations start out as a blank document that
 allows for 
 real-time collaboration between users. We aim to build upon current implementations of real-time collaboration and extend 
 those implementations to provide additional features.
@@ -35,7 +35,7 @@ a similar environment geared towards social interaction. VS Code currently imple
 show the user which part of the document they are currently viewing. This feature is called a 'mini-map'. Our goal is to implement this feature to show where the
 other users are in the conversation as well as the user's relative position in the conversation. Current messaging 
 applications follow a more rigid messaging format. Messages in a conversation are often presented in chronological order and 
-are uneditable. Our application will strive to break from these conventions to provide a fully editable conversation where the
+are immutable. Our application will strive to break from these conventions to provide a fully editable conversation where the
 user can type wherever they choose.
 
 ## Tasks
@@ -69,7 +69,7 @@ parameters.
 ## Methods
 We will research and use many different software development methodologies, tools, and technologies
 in the process of building this system. Software development is an inherently volatile branch of
-engineering, so we will need a workflow that is flexible enough to accomodate for any sudden shifts
+engineering, so we will need a workflow that is flexible enough to accommodate for any sudden shifts
 in design. The Agile methodology would allow us to quickly write code, test it, and have it running
 in our "production" environment. In addition to our weekly meetings with our supervisor, we will
 have team meetings once a week to update each other on individual progress and share any
@@ -90,7 +90,7 @@ Integration/Continuous Deployment (CI/CD) pipelines will help in automating this
 pull request can get merged to our master branch in Git, it must be approved by at least one
 reviewer and a pipeline must be run that will run a suite of tests to validate that there are no
 breaking changes. _Our use cases for testing will be directly based off of our requirements so that
-if our tests are passing, we know we have adhereded to our requirements._
+if our tests are passing, we know we have adhered to our requirements._
 
 Since we are developing a complex software system, we will need to research technologies for each
 component of the system. We need a scalable platform to run the server-side code, so cloud vendors
