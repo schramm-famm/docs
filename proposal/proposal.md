@@ -83,14 +83,21 @@ GitHub will also be where we host our remote repositories for all of our source 
 documentation. GitHub features like organizations, pull requests, and issue tracking will help keep
 our project organized.
 
+Prior to the design process, requirements must be clearly specified. UML
+diagrams will be a useful tool during this process as it will allow us
+to visualize the relationships within our system. Visualization would aid
+in preparing the system designs and clarifying requirements. Use cases for
+testing are also directly based off of the requirements so it is important
+that they are clear enough that the tests will validate the correct
+behaviour.
+
 Once code for a feature or bug fix is written by one team member (or two in the case of pair
 programming), it will need to go through code review by at least one other team member. Testing will
 also be an important step for validating new changes to any code base we have. Continuous
 Integration/Continuous Deployment (CI/CD) pipelines will help in automating this process. Before any
 pull request can get merged to our master branch in Git, it must be approved by at least one
 reviewer and a pipeline must be run that will run a suite of tests to validate that there are no
-breaking changes. _Our use cases for testing will be directly based off of our requirements so that
-if our tests are passing, we know we have adhered to our requirements._
+breaking changes.
 
 Since we are developing a complex software system, we will need to research technologies for each
 component of the system. We need a scalable platform to run the server-side code, so cloud vendors

@@ -1,7 +1,8 @@
-\documentclass[letterpaper]{report}
+\documentclass[letterpaper,12pt]{report}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
 
 \hypersetup{
     colorlinks, %set true if you want colored links
@@ -110,6 +111,14 @@
 	documentation. GitHub features like organizations, pull requests, and issue
 	tracking will help keep our project organized.
 
+	Prior to the design process, requirements must be clearly specified. UML
+	diagrams will be a useful tool during this process as it will allow us
+	to visualize the relationships within our system. Visualization would aid
+	in preparing the system designs and clarifying requirements. Use cases for
+	testing are also directly based off of the requirements so it is important
+	that they are clear enough that the tests will validate the correct
+	behaviour.
+
 	Once code for a feature or bug fix is written by one team member (or two in
 	the case of pair programming), it will need to go through code review by at
 	least one other team member. Testing will also be an important step for
@@ -118,9 +127,7 @@
 	this process. Before any pull request can get merged to our master branch
 	in Git, it must be approved by at least one reviewer and a pipeline must be
 	run that will run a suite of tests to validate that there are no breaking
-	changes. Our use cases for testing will be directly based off of our
-	requirements so that if our tests are passing, we know we have adhered to
-	our requirements.
+	changes.
 
 	Since we are developing a complex software system, we will need to research
 	technologies for each component of the system. We need a scalable platform
@@ -146,8 +153,6 @@
 	free, we would expect our hosting costs to be less than \$100. This project
 	would benefit from having a workplace available for us to work in. It would
 	help to have an on-campus space to develop in.
-
-	\pagebreak
 
 	\section*{Degree Relevance}
 	\markright{}
