@@ -23,10 +23,13 @@ Cheryl Schramm
 	* [Igor Veselinovic](#igor-veselinovic)
 
 ## Objectives
-The objective of this project is to develop a messaging platform where conversations start out as a blank document that
+The objective of this project is to develop a messaging platform where conversations start out as a blank
+document that
 allows for 
-real-time collaboration between users. We aim to build upon current implementations of real-time collaboration and extend 
-those implementations to provide additional features.
+real-time collaboration between users. Real-time collaboration in the context of a document meaning that
+when a user edits the document, other users will be able to see that change instantly, and also make their 
+own changes. We aim to build upon current implementations of real-time collaboration and extend those 
+implementations to provide additional features.
 
 ## Background
 Real-time collaboration has been implemented as a feature in word processing software, such as Microsoft Word, Google Docs, and 
@@ -59,8 +62,8 @@ notifications. Upon re-entering a conversation, the user will be presented with
 the changes made since the last time they were active. Users can manually view
 the history of any excerpt to determine which user contributed each change to
 the excerpt. An overview of the conversation that displays the positions of
-other active users in the conversation will be placed in the corner of every
-conversation.
+other active users in the conversation, which we have named the mini-map, will 
+be placed in the corner of every conversation.
 
 Search functionality will also be provided in the application. Users will be
 able to search through conversations for specific keywords and filter certain
