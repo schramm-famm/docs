@@ -73,7 +73,7 @@ parameters.
 We will research and use many different software development methodologies, tools, and technologies
 in the process of building this system. Software development is an inherently volatile branch of
 engineering, so we will need a workflow that is flexible enough to accommodate for any sudden shifts
-in design. The Agile methodology would allow us to quickly write code, test it, and have it running
+in design. The Agile methodology will allow us to quickly write code, test it, and have it running
 in our "production" environment. In addition to our weekly meetings with our supervisor, we will
 have team meetings once a week to update each other on individual progress and share any
 discoveries. Also, we will consider pair programming, where two programmers write code together at
@@ -87,8 +87,8 @@ documentation. GitHub features like organizations, pull requests, and issue trac
 our project organized.
 
 Prior to the design process, requirements must be clearly specified. UML
-diagrams will be a useful tool during this process as it will allow us
-to visualize the relationships within our system. Visualization would aid
+diagrams will be a useful tool during this process as they will allow us
+to visualize the relationships within our system. Visualization will aid
 in preparing the system designs and clarifying requirements. Use cases for
 testing are also directly based off of the requirements so it is important
 that they are clear enough that the tests will validate the correct
