@@ -45,6 +45,9 @@ Think about where you want to be in January: you want design done and some imple
   
   
 Igor - aws
+
 Thao - authorization
+
 Honor - RTE
-Riley - db stuff, figuring out wrappers for different commands.
+
+Riley - db stuff, figuring out wrappers for different commands. MySql
