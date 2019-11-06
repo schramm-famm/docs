@@ -43,3 +43,8 @@ Think about where you want to be in January: you want design done and some imple
 * have some scenarios that demonstrate using the schemas in the cloud.
   Demonstrate that the design works in the scenarios.
   
+  
+Igor - aws
+Thao - authorization
+Honor - RTE
+Riley - db stuff, figuring out wrappers for different commands.
