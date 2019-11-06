@@ -50,4 +50,4 @@ Thao - authorization
 
 Honor - RTE
 
-Riley - db stuff, figuring out wrappers for different commands. MySql
+Riley - db stuff, figuring out wrappers for different commands. MySql. Maybe get it running in a container?
