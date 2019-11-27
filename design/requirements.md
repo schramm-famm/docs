@@ -74,3 +74,45 @@ non-**OWNER** user from the **conversation**.
 **OWNER** users in an existing **conversation** shall be able to delete the
 **conversation**. This will require entering the **name** of the
 **conversation** and the **password** of the **user**.
+
+## Conversations (content)
+
+Users shall be able to enter and delete text in a **conversation**.
+
+Users shall be able to apply styling to text in a **conversation**. The
+styling options are:
+  * bold
+  * italics
+  * underline
+  * background colour (highlight)
+  * font family
+  * font colour
+  * font size
+
+Users shall be able to format text in a **conversation** in the following
+ways:
+  * justification
+  * lists (ordered or undordered)
+
+Users shall be able to insert images and gifs in a **conversation** which
+will be anchored as characters.
+
+Users shall be able to set text in a **conversation** as a hyperlink to a
+web page.
+
+Users shall be able to click on hyperlink text in a **conversation** to open
+the linked web page in a new tab.
+
+Users shall be able to type the **username** of another **user** in a
+**conversation** with a prefixed "@" symbol to send that user a notification.
+
+Users shall be able to lock text in a **conversation** so that it cannot be
+modified.
+
+Users shall have access to a list of all the locked text in a **conversation**.
+
+Users shall be able to unlock previously-locked text in a **conversation**
+so that it can be modified, with the following conditions:
+  * locked text can be unlocked by the **user** who originally locked it
+  * locked text can be unlocked by any **user** with a greater **role** than
+  the **user** who originally locked it
