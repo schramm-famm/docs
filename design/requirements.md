@@ -75,7 +75,7 @@ non-**OWNER** user from the **conversation**.
 **conversation**. This will require entering the **name** of the
 **conversation** and the **password** of the **user**.
 
-## Conversations (content)
+# Conversations (content)
 
 Users shall be able to enter and delete text in a **conversation**.
 
@@ -94,7 +94,7 @@ ways:
   * justification
   * lists (ordered or undordered)
 
-Users shall be able to insert images and gifs in a **conversation** which
+(REVIEW) Users shall be able to insert images and gifs in a **conversation** which
 will be anchored as characters.
 
 Users shall be able to set text in a **conversation** as a hyperlink to a
@@ -109,10 +109,64 @@ Users shall be able to type the **username** of another **user** in a
 Users shall be able to lock text in a **conversation** so that it cannot be
 modified.
 
-Users shall have access to a list of all the locked text in a **conversation**.
+Users shall be able to access a list of all the locked text in a
+**conversation**.
 
-Users shall be able to unlock previously-locked text in a **conversation**
+(REVIEW) Users shall be able to unlock previously-locked text in a **conversation**
 so that it can be modified, with the following conditions:
   * locked text can be unlocked by the **user** who originally locked it
   * locked text can be unlocked by any **user** with a greater **role** than
   the **user** who originally locked it
+
+# History
+
+Users shall be able to access a list of changes made to a **conversation**.
+
+Users shall be able to filter the list of changes made to a **conversation**
+based on:
+  * start time
+  * end time
+  * user
+  * keywords
+  * type of change (addition/deletion/styling/formatting)
+
+Users shall be able to see a specific pre-filtered list of changes made to a
+**conversation** that shows only the changes made since they last had the
+**conversation** open.
+
+# Notifications
+
+Users shall receive both a browser notification and an email when invited to a
+**conversation**.
+
+Users shall receive both a browser notification and an email when tagged in a
+**conversation**.
+
+Users shall receive a browser notification when another **user** modifies the
+text in a **conversation** while the browser tab is not open.
+
+Users shall receive a browser notification and an email when their **role** has
+been changed in a **conversation**.
+
+Users shall be able to _globally_ mute notifications _for all_
+**conversations**. Global muting can be applied to just browser notifications or
+just emails. Global muting can selectively be applied to the following
+notification types:
+  * invitation
+  * text entered
+  * text re-styled/re-formatted
+  * user was tagged
+  * user's role changed
+
+Users shall be able to mute notifications _for each_ **conversation** for a set
+amount of time. **Conversation**-specific muting can be applied to just browser
+notifications or just emails. **Conversation**-specific muting can selectively
+be applied to the following notification types:
+  * text entered
+  * text re-styled/re-formatted
+  * user was tagged
+  * user's role changed
+
+Users shall receive a visual indication when another **user** modifies the text
+in a **conversation** while the browser tab is open, but the conversation is not
+open.
