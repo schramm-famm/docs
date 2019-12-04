@@ -170,3 +170,21 @@ be applied to the following notification types:
 Users shall receive a visual indication when another **user** modifies the text
 in a **conversation** while the browser tab is open, but the conversation is not
 open.
+
+# Mini-map
+
+Users shall be shown a **mini-map** when they have a **conversation** open.  The
+**mini-map** will be a small section of the browser page that displays the
+entire **conversation** in a smaller format than the **conversation** area
+itself. The position of all active **users** will be displayed in the
+**mini-map**.
+
+Users shall be able to click on a **user's** position indicator in the
+**mini-map**, which will adjust their main **conversation** view to the position
+of the **user** they clicked on.
+
+Users shall be shown real-time inidicators of other **users** typing in the
+**conversation** next to the **users'** position indicators on the **mini-map**.
+
+(REVIEW) Users shall be shown the position of the **tags** in a **conversation**
+that refer to them on the **mini-map**.
