@@ -3,7 +3,7 @@
 Users shall be _required_ to register an account to use the application.
 
 Users shall be able to register by _either_:
-  * providing a unique **email**, a unique **username**, and a **password**
+  * providing a unique **email**, a **name**, and a **password**
   * authenticating through their Google or Facebook account
 
 Users shall have the _option_ to set a _single_ custom **avatar** for their
@@ -26,8 +26,8 @@ Users shall be able to create a **conversation** by providing a **name** for the
 **conversation**. A **conversation** can be made up of _one or more_ **users**.
 
 Users shall be able to specify **users** to invite to a conversation by entering
-a **username** or **email**. This will send an **invitation** to the given user
-in the application and through their **email**.
+an **email**. This will send an **invitation** to the given user in the
+application and through their **email**.
 
 Users shall be _required_ to assign a _single_ **role** _for each_ **user** in
 a new conversation. The allowed roles are:
@@ -103,7 +103,7 @@ web page.
 Users shall be able to click on hyperlink text in a **conversation** to open
 the linked web page in a new tab.
 
-Users shall be able to type the **username** of another **user** in a
+Users shall be able to type the **name** of another **user** in a
 **conversation** with a prefixed "@" symbol to send that user a notification.
 
 Users shall be able to lock text in a **conversation** so that it cannot be
