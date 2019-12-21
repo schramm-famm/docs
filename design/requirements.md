@@ -3,7 +3,7 @@
 Users shall be _required_ to register an account to use the application.
 
 Users shall be able to register by _either_:
-  * providing an **email**, **username**, and **password**
+  * providing a unique **email**, a unique **username**, and a **password**
   * authenticating through their Google or Facebook account
 
 Users shall have the _option_ to set a _single_ custom **avatar** for their
