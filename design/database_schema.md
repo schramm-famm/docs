@@ -23,15 +23,9 @@ ID (str, unq) | Email (str, unq) | Name (str) | Salt (str) | Password (str) | Av
 --- | --- | --- | --- | --- | ---
 UUID | johnny85@gmail.com | John Smith | asdf-wqer-wert | asmnwefkjsdf | avatars/johnny_smithy.png
 
-`user_sessions`
-
-ID (str, unq) | User_ID (str, fk) | Login_Time (ts) | Last_Seen (ts)
---- | --- | --- | ---
-UUID | UUID | 2019-10-01-20:00:00 | 2019-10-01-23:30:00
-
 `users_to_conversations`
 
-User_ID (str, fk) | Convo_ID (str, fk) | Role (enum) | Nickname (str) | Pending (bool) | Last Opened (ts)
+User_ID (str, fk) | Convo_ID (str, fk) | Role (enum) | Nickname (str) | Pending (bool) | Last_Opened (ts)
 --- | --- | --- | --- | --- | ---
 UUID | UUID | ENUM(admin) | johnnybby | True | 2019-12-21-13:45:00
 
