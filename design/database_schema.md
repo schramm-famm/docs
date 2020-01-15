@@ -7,9 +7,9 @@
 
 `conversations `
 
- ID (str, unq) | File_Path (str) | Name (str) | Picture (str) | Description (str)
- --- | --- | --- | --- | ---
-UUID | \<UUID\>.html | Family | conversation_135254.png | Chilling with pals
+ ID (int, unq) | Name (str) | Description (str)
+ --- | --- | --- 
+1 | Family | Chilling with pals
 
 `patches`
 
