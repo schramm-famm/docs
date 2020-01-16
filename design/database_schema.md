@@ -13,24 +13,24 @@
 
 `patches`
 
-ID (str, unq) | Timestamp (ts) | Patch (str)| Convo_ID (str, fk) | User_ID (str, fk) | Type (enum)
+ID (int, unq) | Timestamp (ts) | Patch (str)| Convo_ID (str, fk) | User_ID (str, fk) | Type (enum)
  --- | --- | --- | --- | --- | ---
-UUID | 2019-10-01-20:00:00 | \<some patch\> | UUID | UUID | ENUM(formatting)
+1 | 2019-10-01-20:00:00 | \<some patch\> | UUID | UUID | ENUM(formatting)
 
 `users`
 
-ID (str, unq) | Email (str, unq) | Name (str) | Salt (str) | Password (str) | Avatar (str)
+ID (int,str, unq) | Email (str, unq) | Name (str) | Salt (str) | Password (str) | Avatar (str)
 --- | --- | --- | --- | --- | ---
-UUID | johnny85@gmail.com | John Smith | asdf-wqer-wert | asmnwefkjsdf | avatars/johnny_smithy.png
+1 | johnny85@gmail.com | John Smith | asdf-wqer-wert | asmnwefkjsdf | avatars/johnny_smithy.png
 
 `users_to_conversations`
 
-User_ID (str, fk) | Convo_ID (str, fk) | Role (enum) | Nickname (str) | Pending (bool) | Last_Opened (ts)
+User_ID (int, fk) | Convo_ID (str, fk) | Role (enum) | Nickname (str) | Pending (bool) | Last_Opened (ts)
 --- | --- | --- | --- | --- | ---
-UUID | UUID | ENUM(admin) | johnnybby | True | 2019-12-21-13:45:00
+1 | UUID | ENUM(admin) | johnnybby | True | 2019-12-21-13:45:00
 
 `preferences`
 
-User_ID (str, fk) | Preferences (JSON?)
+User_ID (int, fk) | Preferences (JSON?)
 --- | ---
-UUID | Something
+1 | Something
