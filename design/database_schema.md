@@ -13,9 +13,9 @@
 
 `patches`
 
-ID (str, unq) | Timestamp (ts) | Patch (str)| Convo_ID (str, fk) | User_ID (int, fk) | Type (enum)
+ID (str, unq) | Timestamp (ts) | Patch (str)| Convo_ID (int, fk) | User_ID (int, fk) | Type (enum)
  --- | --- | --- | --- | --- | ---
-UUID | 2019-10-01-20:00:00 | \<some patch\> | UUID | 1 | ENUM(formatting)
+UUID | 2019-10-01-20:00:00 | \<some patch\> | 2 | 1 | ENUM(formatting)
 
 `users`
 
