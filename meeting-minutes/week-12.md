@@ -36,6 +36,4 @@ The unexpected hiccups that will trip us up.
 
 does carleton have a megnetometer? ask prof steele. she has a ti board with that from 3310
 
-Next sprint steps:
 
-* Igor: 
