@@ -19,7 +19,7 @@ UUID | 2019-10-01-20:00:00 | \<some patch\> | 2 | 1 | ENUM(formatting)
 
 `users`
 
-ID (int, unq) | Email (str, unq) | Name (str) | Salt (str) | Password (str) | Avatar (str)
+ID (int, unq) | Email (str, unq) | Name (str) | Salt (str) | Password (str) | AvatarURL (str)
 --- | --- | --- | --- | --- | ---
 1 | johnny85@gmail.com | John Smith | asdf-wqer-wert | asmnwefkjsdf | avatars/johnny_smithy.png
 
