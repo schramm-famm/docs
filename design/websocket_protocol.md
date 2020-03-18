@@ -10,11 +10,11 @@ connections.
 
 ## Messages
 **5** types of messages can be sent over the WebSocket:
-    * `Init`
-    * `Update`
-    * `Ack`
-    * `UserJoin`
-    * `UserLeave`
+* `Init`
+* `Update`
+* `Ack`
+* `UserJoin`
+* `UserLeave`
 
 **Fields**:
 * `type`: int
