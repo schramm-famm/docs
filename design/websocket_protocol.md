@@ -136,7 +136,7 @@ client leaves the conversation.
 * `user_id`: int
     * ID of the user.
 
-## Algorithm
+## Algorithms
 This section will cover the algorithms that are implemented by the server and the
 client to handle incoming messages.
 
@@ -181,4 +181,56 @@ else if range.start < shifter's end caret:
 if there was a replacement with a positive delta.doc:
     do the same process ass the normal addition but with the editor's end caret
     equal to its start caret and delta.start instead of delta.doc
+```
+
+### Update Message Handling
+
+#### Server
+The server stores a checkpoint for each version of a conversation and removes a
+version checkpoint when it receives an `Ack` message from all active users in
+the conversation for the next version. The conversation version number is
+incremented with every valid `Edit Update` message received from a client. The
+checkpoint is used to handle `Cursor Update` messages from clients that are
+behind on the conversation state. Each checkpoint will contain the following
+fields:
+* `version`: int
+    * The conversation version number of this checkpoint.
+* `active_users`: Object
+    * User IDs are the keys and the value is another Object of the user's caret
+      `start` and `end` at this conversation version.
+* `sender_caret`: Object
+    * Caret position (`start` and `end`) of the sender of the
+      message that brought the conversation to this version.
+* `delta`: Object
+    * The deltas (`caret_start`, `caret_end`, and `doc`) that brought the
+      conversation to this version.
+
+The server will then follow the pseudocode below when processing `Update` and
+`Ack` messages.
+
+```
+receive msg
+switch msg.type
+    case edit:
+        apply msg.patch to conversation.content
+        if patch failed:
+            return
+        conversation.version++
+        if msg.version != conversation.version:
+            msg.version = conversation.version
+        broadcast message to all active clients, excluding the sender
+        sender_caret = current sender caret position
+        shift carets of all active clients, including the sender
+        store checkpoint object
+    case cursor:
+        shift caret of sender at msg.version checkpoint
+        shift caret of sender at subsequent checkpoints based on the caret
+        position at the previous checkpoint
+        broadcast message to all active clients, excluding the sender
+    case ack:
+        remove user from list of awaiting acks for the msg.version
+        if all acks for msg.version have been received:
+            broadcast new ack msg to all active clients, including the sender
+            remove checkpoint for msg.version - 1
+    ...
 ```
