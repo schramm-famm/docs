@@ -179,7 +179,7 @@ else if range.start < shifter's end caret:
         shifter's start caret = range.start
 
 if there was a replacement with a positive delta.doc:
-    do the same process ass the normal addition but with the editor's end caret
+    do the same process as the normal addition but with the editor's end caret
     equal to its start caret and delta.start instead of delta.doc
 ```
 
@@ -211,7 +211,7 @@ The server will then follow the pseudocode below when processing `Update` and
 ```
 receive msg
 switch msg.type
-    case edit:
+    case edit update:
         apply msg.patch to conversation.content
         if patch failed:
             return
@@ -220,17 +220,17 @@ switch msg.type
             msg.version = conversation.version
         broadcast message to all active clients, excluding the sender
         sender_caret = current sender caret position
-        shift carets of all active clients, including the sender
+        apply delta to caret of sender
+        shift carets of all active clients
         store checkpoint object
-    case cursor:
-        shift caret of sender at msg.version checkpoint
-        shift caret of sender at subsequent checkpoints based on the caret
-        position at the previous checkpoint
+    case cursor update:
+        apply delta to caret of sender at msg.version checkpoint
+        shift caret of sender at subsequent checkpoints based on the new caret
+        position
         broadcast message to all active clients, excluding the sender
     case ack:
         remove user from list of awaiting acks for the msg.version
         if all acks for msg.version have been received:
             broadcast new ack msg to all active clients, including the sender
             remove checkpoint for msg.version - 1
-    ...
 ```
