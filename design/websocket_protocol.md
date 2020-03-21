@@ -242,8 +242,8 @@ switch msg.type
             msg.version = conversation.version
         broadcast message to all active clients, excluding the sender
         sender_caret = current sender caret position
-        apply delta to caret of sender
         shift carets of all active clients
+        apply delta to caret of sender
         store checkpoint object
     case cursor update:
         apply delta to caret of sender at msg.version checkpoint
@@ -268,7 +268,7 @@ following fields:
 * `version`: int
     * The conversation version number of this checkpoint.
 * `self_caret`: Object
-    * Caret position (`start` and `end`) of the client and this conversation
+    * Caret position (`start` and `end`) of the client at this conversation
       version.
 * `active_users`: Object
     * User IDs are the keys and the value is another Object of the user's caret
