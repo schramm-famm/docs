@@ -387,5 +387,5 @@ for user_id, caret in checkpoint.version[msg.version - 1].active_users:
 
 **Sync Handling:**
 ```
-remove checkpoint.version[msg.version]
+remove checkpoint.version[msg.version - 1]
 ```
