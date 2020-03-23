@@ -213,10 +213,8 @@ version checkpoint when it receives a `Sync` message from all active users in
 the conversation for the next version. The conversation version number is
 incremented with every valid `Edit Update` message received from a client. The
 checkpoint is used to handle `Cursor Update` messages from clients that are
-behind on the conversation state. Each checkpoint will contain the following
-fields:
-* `version`: int
-    * The conversation version number of this checkpoint.
+behind on the conversation state. Each checkpoint uses the version number as the
+key and the value is an Object that contains the following fields:
 * `active_users`: Object
     * User IDs are the keys and the value is another Object of the user's caret
       `start` and `end` at this conversation version.
@@ -263,10 +261,9 @@ and removes a version checkpoint when it receives a `Sync` message from the
 server for the next version. The conversation version number is incremented with
 every `Edit Update` message sent from the client and received from the server.
 The checkpoint is used to handle `Cursor Update` messages from clients that are
-behind on the conversation state. Each version checkpoint will contain the
-following fields:
-* `version`: int
-    * The conversation version number of this checkpoint.
+behind on the conversation state. Each version checkpoint uses the version
+number as the key and the value will be an Object that contains the following
+fields:
 * `self_caret`: Object
     * Caret position (`start` and `end`) of the client at this conversation
       version.
