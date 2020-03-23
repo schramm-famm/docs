@@ -313,6 +313,7 @@ for user_id, caret in conversation.active_users:
 
 conversation.self_caret = caret
 conversation.textSize = textSize
+conversation.content = conversation.innerHTML
 ```
 
 The following pseudocode blocks cover how the client handles `Cursor Update`,
