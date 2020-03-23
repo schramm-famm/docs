@@ -121,6 +121,22 @@ user types or deletes letters.
 A `Cursor Update` message indicates that there was only a change in a user's
 caret position. There are no additional fields.
 
+**Format**:
+```
+{
+    "type": 1,
+    "data": {
+        "type: 1,
+        "user_id": int,
+        "version": int,
+        "delta": {
+            "caret_start": int,
+            "caret_end": int,
+        }
+    }
+}
+```
+
 ### `Ack`
 This message is sent from the server to a client when the server receives an
 `Edit Update` message from that client to confirm that the message has been
@@ -129,6 +145,16 @@ processed and broadcast.
 **Payload Fields**:
 * `version`: int
     * Version in the received `Edit Update` message.
+
+**Format**:
+```
+{
+    "type": 2,
+    "data": {
+        "version": int
+    }
+}
+```
 
 ### `Sync`
 This message is sent from a client to the server when it receives an `Edit
@@ -142,6 +168,16 @@ clients have reached that version state.
 * `version`: int
     * Version in the received `Edit Update` message.
 
+**Format**:
+```
+{
+    "type": 3,
+    "data": {
+        "version": int
+    }
+}
+```
+
 ### `UserJoin`
 The message sent from the server to all active users in a conversation when a new
 client joins the conversation.
@@ -150,6 +186,16 @@ client joins the conversation.
 * `user_id`: int
     * ID of the user.
 
+**Format**:
+```
+{
+    "type": 4,
+    "data": {
+        "user_id": int
+    }
+}
+```
+
 ### `UserLeave`
 The message sent from the server to all active users in a conversation when a 
 client leaves the conversation.
@@ -157,6 +203,16 @@ client leaves the conversation.
 **Payload Fields**:
 * `user_id`: int
     * ID of the user.
+
+**Format**:
+```
+{
+    "type": 5,
+    "data": {
+        "user_id": int
+    }
+}
+```
 
 ## Algorithms
 This section will cover the algorithms that are implemented by the server and the
@@ -322,11 +378,26 @@ The following pseudocode blocks cover how the client handles `Cursor Update`,
 **Cursor Update Handling:**
 ```
 apply delta to caret of msg.sender at checkpoint.version[msg.version]
-for (v = msg.version + 1; v < checkpoint.version.length; v++):
+for (v = msg.version + 1; v <= latest version; v++):
     receiver_caret = checkpoint.version[v - 1].active_users[msg.sender]
     sender_caret = checkpoint.version[v].sender_caret
     delta = checkpoint.version[v].delta
-    checkpoint.version[v] = shiftCaret(receiver_caret, sender_caret, delta)
+    checkpoint.version[v].active_users[msg.sender] = shiftCaret(
+        receiver_caret,
+        sender_caret,
+        delta,
+    )
+
+conversation.active_users[msg.sender] = checkpoint.version[latest version].active_users[msg.sender]
+self_caret = checkpoint.version[latest version].self_caret;
+
+for patch, delta in patchBuffer:
+    conversation.active_users[msg.sender] = shiftCaret(
+        conversation.active_users[msg.sender],
+        self_caret,
+        delta,
+    )
+    apply delta to self_caret
 ```
 
 **Edit Update Handling:**
@@ -344,11 +415,10 @@ conversation.self_caret = checkpoint.version[msg.version].self_caret
 
 for user_id, caret in checkpoint.version[msg.version - 1].active_users:
     if user_id == msg.sender:
-        continue
-    checkpoint.version[msg.version].active_users[user_id] = shiftCaret(caret, sender_caret, msg.delta)
-    conversation.active_users[user_id] = checkpoint.version[msg.version].active_users[user_id]
-
-checkpoint.version[msg.version].active_users[msg.sender] = delta applied to sender_caret
+        checkpoint.version[msg.version].active_users[user_id] = delta applied to caret
+    else:
+        checkpoint.version[msg.version].active_users[user_id] = shiftCaret(caret, sender_caret, msg.delta)
+        conversation.active_users[user_id] = checkpoint.version[msg.version].active_users[user_id]
 
 if msg.version <= conversation.version:
     for patch, delta in patchBuffer:
@@ -375,10 +445,11 @@ if patchBuffer.length <= 0:
     return error
 
 patch, delta = patchBuffer.dequeue()
+apply patch to checkpoint.content
+
 self_caret = checkpoint.version[msg.version - 1].self_caret
 checkpoint.version[msg.version].self_caret = delta applied to self_caret
 
-apply patch to checkpoint.content
 for user_id, caret in checkpoint.version[msg.version - 1].active_users:
    checkpoint.version[msg.version].active_users[user_id] = shiftCaret(caret, self_caret, delta)
 ```
